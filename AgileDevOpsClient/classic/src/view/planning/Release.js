@@ -6,21 +6,20 @@ Ext.define('AgileDevOpsClient.view.planning.Release', {
 
     alias:'planning.release',
     requires: [
-        'AgileDevOpsClient.view.planning.ReleaseCard'
+        'AgileDevOpsClient.view.planning.ReleaseCard',
+        'Ext.button.Button'
     ],
     items: [
         {
             title: 'Card',
-            xtype: 'panel',
-            items: [{
+            //xtype: 'panel',
+            dockedItems: [{
                 xtype: 'toolbar',
-                cls: 'sencha-dash-dash-headerbar toolbar-btn-shadow',
-                height: 50,
-                itemId: 'releaseToolbar',
+                dock: 'top',
                 items: [{
                     xtype: 'button',
                     text: 'Add'
-                },
+                    },
                     {
                         xtype: 'button',
                         text: 'Edit'
@@ -30,11 +29,14 @@ Ext.define('AgileDevOpsClient.view.planning.Release', {
                         text: 'Delete'
                     }
                 ]
-            }, {
+
+            }],
+
+            items: [ {
                 xtype: 'releasecard'
             }]
         }, {
-            title: 'Time line',
+            title: 'Time line'
         }
     ]
 });

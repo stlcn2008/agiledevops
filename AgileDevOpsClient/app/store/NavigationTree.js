@@ -25,14 +25,14 @@ Ext.define('AgileDevOpsClient.store.NavigationTree', {
                     },
                     {
                         text: 'Sprint',
-                        view: 'pages.Error404Window',
+                        view: 'planning.Release',
                         leaf: true,
                         iconCls: 'x-fa fa-exclamation-triangle',
                         routeId:'pages.404'
                     },
                     {
                         text: 'Back log',
-                        view: 'pages.Error500Window',
+                        view: 'planning.Release',
                         leaf: true,
                         iconCls: 'x-fa fa-times-circle',
                         routeId:'pages.500'
@@ -49,14 +49,14 @@ Ext.define('AgileDevOpsClient.store.NavigationTree', {
                 children: [
                     {
                         text: 'Project progress',
-                        view: 'pages.BlankPage',
+                        view: 'planning.Release',
                         leaf: true,
                         iconCls: 'x-fa fa-file-o',
                         routeId:'pages.blank'
                     },
                     {
                         text: 'My progress',
-                        view: 'pages.Error404Window',
+                        view: 'planning.Release',
                         leaf: true,
                         iconCls: 'x-fa fa-exclamation-triangle',
                         routeId:'pages.404'

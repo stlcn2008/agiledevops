@@ -42,7 +42,7 @@ Ext.define('AgileDevOpsClient.view.main.MainController', {
         lastView = mainLayout.getActiveItem();
 
         if (!existingItem) {
-            newView = Ext.create('AgileDevOpsClient.view.' + (view || 'pages.Error404Window'), {
+            newView = Ext.create('AgileDevOpsClient.view.' + (view || 'planning.Release'), {
                 hideMode: 'offsets',
                 routeId: hashTag
             });
