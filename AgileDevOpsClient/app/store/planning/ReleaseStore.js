@@ -4,7 +4,13 @@
 Ext.define('AgileDevOpsClient.store.planning.ReleaseStore', {
     extend: 'Ext.data.Store',
 
-    model: 'Release',
+    alias: 'planning.ReleaseStore',
+
+    requires: [
+        'AgileDevOpsClient.model.planning.Release'
+    ],
+
+    model: 'planning.Release',
 
     /*
     Fields can also be declared without a model class:
@@ -18,9 +24,9 @@ Ext.define('AgileDevOpsClient.store.planning.ReleaseStore', {
 
 
     data : [
-        {title: 'Project A',    startDate: 'Spencer', endDate: ''},
-        {title: 'Project B',    startDate: 'Spencer', endDate: ''},
-        {title: 'Project C',    startDate: 'Spencer', endDate: ''},
+        {title: 'Project A',    startDate: '2015-08-10', endDate: '2015-09-09'},
+        {title: 'Project B',    startDate: '2015-09-10', endDate: '2015-10-09'},
+        {title: 'Project C',    startDate: '2015-10-10', endDate: '2015-11-09'},
     ]
 
 });

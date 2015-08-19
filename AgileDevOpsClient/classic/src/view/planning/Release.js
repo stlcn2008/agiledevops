@@ -6,7 +6,7 @@ Ext.define('AgileDevOpsClient.view.planning.Release', {
 
     alias:'planning.release',
     requires: [
-        'AgileDevOpsClient.view.planning.ReleaseCard',
+        'AgileDevOpsClient.view.planning.ReleaseCollection',
         'Ext.button.Button'
     ],
     items: [
@@ -33,7 +33,7 @@ Ext.define('AgileDevOpsClient.view.planning.Release', {
             }],
 
             items: [ {
-                xtype: 'releasecard'
+                xtype: 'releasecollection',
             }]
         }, {
             title: 'Time line'

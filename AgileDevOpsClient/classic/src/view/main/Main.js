@@ -7,7 +7,9 @@ Ext.define('AgileDevOpsClient.view.main.Main', {
 
     requires: [
         'Ext.list.Tree',
-        'AgileDevOpsClient.view.main.MainWrap'
+        'AgileDevOpsClient.view.main.MainWrap',
+        'AgileDevOpsClient.view.main.MainController',
+        'AgileDevOpsClient.view.main.MainModel'
     ],
 
     controller: 'main',
